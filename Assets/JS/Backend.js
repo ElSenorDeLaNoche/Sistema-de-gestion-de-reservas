@@ -31,6 +31,9 @@ function View(Vista, param = "") {
             document.getElementsByClassName("Consulting")[0].classList.add("SerActive");
             ConsultingServices();
             break;
+        case "A4":
+            ConsultingReserves()
+            break;
     }
 }
 
@@ -662,3 +665,70 @@ function OpenReservation(ID, Name, PriceHour, Availability, Description, Descuen
             PopUp.innerHTML = "";
         });
 }
+
+
+async function ConsultingReserves() {
+    const Consult = await pywebview.api.GetReservation();
+
+    const Section = document.querySelector(".GalleryServices");
+
+    let HTML = `
+        <table class="ReservationTable">
+            <thead>
+                <tr>
+                    <th>ID Reserva</th>
+                    <th>Usuario</th>
+                    <th>ID Servicio</th>
+                    <th>Nombre</th>
+                    <th>Servicio</th>
+                    <th>Duración</th>
+                    <th>Tiempo Servicio</th>
+                    <th>Estado</th>
+                    <th>Total</th>
+                    <th>Cancelar</th>
+                    <th>Reservar</th>
+                </tr>
+            </thead>
+            <tbody>
+    `;
+
+    for (let i = 0; i < Consult.ID_Reservation.length; i++) {
+        HTML += `
+            <tr>
+                <td>${Consult.ID_Reservation[i]}</td>
+                <td>${Consult.User[i]}</td>
+                <td>${Consult.IDService[i]}</td>
+                <td>${Consult.Name[i]}</td>
+                <td>${Consult.Service[i]}</td>
+                <td>${Consult.Duration[i]}</td>
+                <td>${Consult.TimeService[i].join(" / ")}</td>
+                <td>
+                    <span class="ReservationState">
+                        ${Consult.State[i]}
+                    </span>
+                </td>
+                <td>${Consult.Total[i]}</td>
+                <td>
+                    <button class="BtnCancel"
+                        onclick="CancelReservation(${Consult.ID_Reservation[i]})">
+                        Cancelar
+                    </button>
+                </td>
+                <td>
+                    <button class="BtnReserve"
+                        onclick="MakeReservation(${Consult.ID_Reservation[i]})">
+                        Reservar
+                    </button>
+                </td>
+            </tr>
+        `;
+    }
+
+    HTML += `
+            </tbody>
+        </table>
+    `;
+
+    Section.innerHTML = HTML;
+}
+

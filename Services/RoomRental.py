@@ -130,10 +130,10 @@ class RoomRental(Services):
             except ValueError :
                 (False,"Error: Hubo un error al momento de registrar el servicio")
     @classmethod
-    def GetServiceID(cls,ID, Date):
+    def GetServiceID(cls,ID_User,ID_Service, Date):
         try:
-            if (ID in cls.__RoomRental["Room_id"]):
-                Consult = cls.__RoomRental["Room_id"].index(ID)
+            if (ID_Service in cls.__RoomRental["Room_id"]):
+                Consult = cls.__RoomRental["Room_id"].index(ID_Service)
                 if cls.__RoomRental["Stock"][Consult] <= 0:
                     Message = "Warning: La cantidad orecida se acaba de agotar para este servicio"
                     raise Exception()
@@ -163,16 +163,16 @@ class RoomRental(Services):
                         Message = "La fecha/hora de inicio debe ser anterior a la fecha/hora de fin."
                         raise Exception()
 
-                    Diferencia = DateEnd - DateStart
+                    Duracion = DateEnd - DateStart
 
                     Total = cls.calculate_cost(Date, cls.__RoomRental["Discount"][Consult], cls.__RoomRental["PriceHour"][Consult])
 
                     cls.__RoomRental["Stock"][Consult] = cls.__RoomRental["Stock"][Consult] - 1
-                    return [ID, 
-                            cls.__RoomRental["Name"][Consult], 
-                            cls.__RoomRental["Stock"][Consult], 
-                            cls.__RoomRental["TypeService"][Consult], 
-                            Diferencia, 
+                    return [ID_User, 
+                            ID_Service,
+                            cls.__RoomRental["Name"][Consult],
+                            cls.__RoomRental["TypeService"][Consult],
+                            Duracion,
                             Date, 
                             "Pendiente",
                             Total]
@@ -183,3 +183,4 @@ class RoomRental(Services):
         
         except Exception:
             return(False, Message)
+        

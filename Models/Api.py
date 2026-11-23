@@ -51,4 +51,6 @@ class Api:
         else:
             error(response[1])
         return response
-    
+
+    def GetReservation(self):
+        return self.Reservation.GetReservation()

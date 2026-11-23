@@ -227,3 +227,50 @@ TypeError: 'NoneType' object is not subscriptable
 2026-11-22 19:58:10,839 - ERROR - Error: Número no válido, debe tener 10 cifras y comenzar por 3
 2026-11-22 19:58:19,271 - INFO - Usuario registrado correctamente
 2026-11-22 19:58:33,679 - WARNING - Se Ha registrado su reserva de manera exitosa
+2026-11-23 00:24:41,690 - INFO - Usuario registrado correctamente
+2026-11-23 00:24:55,832 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-23 00:25:03,841 - WARNING - Se Ha registrado su reserva de manera exitosa
+2026-11-23 00:25:07,703 - ERROR - Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\util.py", line 256, in _call
+    result = json.dumps(result).replace('\\', '\\\\').replace("'", "\\'")
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type timedelta is not JSON serializable
+
+2026-11-23 00:31:26,776 - INFO - Usuario registrado correctamente
+2026-11-23 00:31:52,138 - WARNING - Se Ha registrado su reserva de manera exitosa
+2026-11-23 00:31:54,972 - ERROR - Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\util.py", line 256, in _call
+    result = json.dumps(result).replace('\\', '\\\\').replace("'", "\\'")
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type timedelta is not JSON serializable
+
+2026-11-23 00:38:16,349 - INFO - Usuario registrado correctamente
+2026-11-23 00:38:31,409 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-23 00:38:39,985 - WARNING - Se Ha registrado su reserva de manera exitosa
+2026-11-23 00:43:31,657 - INFO - Usuario registrado correctamente
+2026-11-23 00:43:58,553 - WARNING - Se Ha registrado su reserva de manera exitosa
+2026-11-23 01:01:26,881 - INFO - Usuario registrado correctamente
+2026-11-23 01:01:45,703 - WARNING - Se Ha registrado su reserva de manera exitosa
+2026-11-23 01:02:26,271 - WARNING - Se Ha registrado su reserva de manera exitosa
