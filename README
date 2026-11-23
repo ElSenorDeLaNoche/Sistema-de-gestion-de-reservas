@@ -1,0 +1,8 @@
+Bienvenidos al sistema de gestion de reservas, para el correcto funcionamiento, porfavor hacer lo siguiente:
+
+- Requiere tener instalado Phyton
+- en requeriments.txt se encuentran las dependencias, las cuales son solamente 1, Installar con python: python -m pip install pywebview
+- Al ejecutar el sistema procurar hacerlo des de App.py
+
+
+Gracias por su atencion =)

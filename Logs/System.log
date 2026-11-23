@@ -1,0 +1,229 @@
+2026-11-21 20:00:58,064 - INFO - Usuario registrado correctamente
+2026-11-22 02:54:03,682 - INFO - Usuario registrado correctamente
+2026-11-22 02:54:11,417 - INFO - Se ha realizado una consulta de manera exitosa
+2026-11-22 03:02:41,532 - ERROR - Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\util.py", line 255, in _call
+    result = func(*func_params)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Models\Api.py", line 40, in Bd_RoomRental
+    return self.Room.describe_service()
+           ^^^^^^^^^
+AttributeError: 'Api' object has no attribute 'Room'
+
+2026-11-22 18:17:39,153 - ERROR - Exception occurred during on_script_notify
+Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\platforms\edgechromium.py", line 245, in on_script_notify
+    func_param = json.loads(func_param)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+2026-11-22 18:17:43,496 - ERROR - Exception occurred during on_script_notify
+Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\platforms\edgechromium.py", line 245, in on_script_notify
+    func_param = json.loads(func_param)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+2026-11-22 18:17:55,759 - ERROR - Exception occurred during on_script_notify
+Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\platforms\edgechromium.py", line 245, in on_script_notify
+    func_param = json.loads(func_param)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+2026-11-22 18:25:30,754 - ERROR - Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\util.py", line 255, in _call
+    result = func(*func_params)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Models\Api.py", line 48, in GenerateReservation
+    response = self.Reservation.VerificationData(self,User, Service, Date)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Reservation.VerificationData() takes 4 positional arguments but 5 were given
+
+2026-11-22 18:27:17,459 - ERROR - Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\util.py", line 255, in _call
+    result = func(*func_params)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Models\Api.py", line 48, in GenerateReservation
+    response = self.Reservation.VerificationData(self,User, Service, Date)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Reservation.VerificationData() takes 4 positional arguments but 5 were given
+
+2026-11-22 18:30:12,964 - ERROR - Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\util.py", line 255, in _call
+    result = func(*func_params)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Models\Api.py", line 48, in GenerateReservation
+    response = self.Reservation.VerificationData(User, Service, Date)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Service_Management\Reservation.py", line 21, in VerificationData
+    if Usuarios.GetID(User)[0]:
+       ^^^^^^^^^^^^^^^^^^^^
+TypeError: Usuarios.GetID() missing 1 required positional argument: 'ID'
+
+2026-11-22 18:38:48,314 - ERROR - Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\util.py", line 255, in _call
+    result = func(*func_params)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Models\Api.py", line 48, in GenerateReservation
+    response = self.Reservation.VerificationData(User, Service, Date)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Service_Management\Reservation.py", line 20, in VerificationData
+    UserData = Usuarios.GetID(User)
+               ^^^^^^^^^^^^^^^^^^^^
+TypeError: Usuarios.GetID() missing 1 required positional argument: 'ID'
+
+2026-11-22 18:39:29,466 - ERROR - Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\util.py", line 255, in _call
+    result = func(*func_params)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Models\Api.py", line 48, in GenerateReservation
+    response = self.Reservation.VerificationData(User, Service, Date)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Service_Management\Reservation.py", line 20, in VerificationData
+    UserData = Usuarios.GetID(User)
+               ^^^^^^^^^^^^^^^^^^^^
+TypeError: Usuarios.GetID() missing 1 required positional argument: 'ID'
+
+2026-11-22 18:41:44,616 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 18:42:04,183 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 18:42:42,219 - INFO - Usuario registrado correctamente
+2026-11-22 18:43:00,256 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 18:43:08,776 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 18:43:22,455 - INFO - Se ha realizado una consulta de manera exitosa
+2026-11-22 18:43:51,393 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 18:47:32,129 - INFO - Usuario registrado correctamente
+2026-11-22 18:48:09,265 - ERROR - Error: Identificacion No Valida
+2026-11-22 18:50:49,729 - INFO - Usuario registrado correctamente
+2026-11-22 18:51:06,993 - ERROR - Error: Identificacion No Valida
+2026-11-22 18:53:43,793 - INFO - Usuario registrado correctamente
+2026-11-22 18:54:03,001 - ERROR - Error: Identificacion No Valida
+2026-11-22 18:56:52,019 - INFO - Usuario registrado correctamente
+2026-11-22 18:57:08,159 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 18:57:16,888 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 19:02:01,406 - INFO - Usuario registrado correctamente
+2026-11-22 19:02:11,552 - INFO - Se ha realizado una consulta de manera exitosa
+2026-11-22 19:03:21,665 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 19:03:26,712 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 19:05:43,304 - INFO - Usuario registrado correctamente
+2026-11-22 19:05:55,592 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 19:06:08,072 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 19:07:01,227 - INFO - Usuario registrado correctamente
+2026-11-22 19:07:22,799 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 19:09:00,492 - ERROR - Error: Número no válido, debe tener 10 cifras y comenzar por 3
+2026-11-22 19:09:05,831 - INFO - Usuario registrado correctamente
+2026-11-22 19:09:18,385 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 19:17:10,739 - INFO - Usuario registrado correctamente
+2026-11-22 19:17:23,303 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 19:17:31,619 - ERROR - Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\util.py", line 255, in _call
+    result = func(*func_params)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Models\Api.py", line 48, in GenerateReservation
+    response = self.Reservation.VerificationData(User,ID_service, Service, Date)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Service_Management\Reservation.py", line 23, in VerificationData
+    Rental = RoomRental.GetServiceID(ID_service,Date)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: RoomRental.GetServiceID() missing 1 required positional argument: 'Date'
+
+2026-11-22 19:22:42,638 - INFO - Usuario registrado correctamente
+2026-11-22 19:23:01,704 - ERROR - La fecha debe ser una tupla.
+2026-11-22 19:26:03,632 - ERROR - La fecha debe ser una tupla.
+2026-11-22 19:26:37,706 - INFO - Usuario registrado correctamente
+2026-11-22 19:26:55,423 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 19:27:05,120 - ERROR - La fecha debe ser una tupla.
+2026-11-22 19:29:01,395 - INFO - Usuario registrado correctamente
+2026-11-22 19:29:25,422 - ERROR - La fecha debe ser una tupla.
+2026-11-22 19:32:28,444 - INFO - Usuario registrado correctamente
+2026-11-22 19:32:56,343 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 19:33:04,331 - ERROR - Traceback (most recent call last):
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Services\RoomRental.py", line 151, in GetServiceID
+    if not isinstance(DateStart, datetime):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\util.py", line 255, in _call
+    result = func(*func_params)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Models\Api.py", line 48, in GenerateReservation
+    response = self.Reservation.VerificationData(User,ID_service, Service, Date)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Service_Management\Reservation.py", line 23, in VerificationData
+    Rental = RoomRental.GetServiceID(ID_service,Date)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Services\RoomRental.py", line 182, in GetServiceID
+    return(False, Message)
+                  ^^^^^^^
+UnboundLocalError: cannot access local variable 'Message' where it is not associated with a value
+
+2026-11-22 19:36:36,654 - ERROR - Error: Formato de correo no válido
+2026-11-22 19:36:42,336 - INFO - Usuario registrado correctamente
+2026-11-22 19:37:00,815 - ERROR - La fecha/hora de inicio debe ser de tipo datetime.
+2026-11-22 19:37:17,167 - ERROR - La fecha/hora de inicio debe ser de tipo datetime.
+2026-11-22 19:40:52,938 - INFO - Usuario registrado correctamente
+2026-11-22 19:41:13,731 - ERROR - Traceback (most recent call last):
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Services\RoomRental.py", line 169, in GetServiceID
+    Total = cls.calculate_cost(Date, cls.__RoomRental["Discount"][Consult], cls.__RoomRental["PriceHour"][Consult])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: RoomRental.calculate_cost() missing 1 required positional argument: 'PriceHour'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\util.py", line 255, in _call
+    result = func(*func_params)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Models\Api.py", line 48, in GenerateReservation
+    response = self.Reservation.VerificationData(User,ID_service, Service, Date)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Service_Management\Reservation.py", line 23, in VerificationData
+    Rental = RoomRental.GetServiceID(ID_service,Date)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Services\RoomRental.py", line 186, in GetServiceID
+    return(False, Message)
+                  ^^^^^^^
+UnboundLocalError: cannot access local variable 'Message' where it is not associated with a value
+
+2026-11-22 19:45:18,138 - INFO - Usuario registrado correctamente
+2026-11-22 19:45:49,819 - ERROR - Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\util.py", line 255, in _call
+    result = func(*func_params)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Models\Api.py", line 49, in GenerateReservation
+    if (response[0]):
+        ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2026-11-22 19:50:35,045 - INFO - Usuario registrado correctamente
+2026-11-22 19:51:05,475 - ERROR - Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\util.py", line 255, in _call
+    result = func(*func_params)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Models\Api.py", line 49, in GenerateReservation
+    if (response[0]):
+        ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2026-11-22 19:54:18,443 - INFO - Usuario registrado correctamente
+2026-11-22 19:54:45,878 - ERROR - Error: El Usuario no se encuentra Registrado En el Sistema
+2026-11-22 19:54:55,641 - ERROR - Traceback (most recent call last):
+  File "C:\Users\skiri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\webview\util.py", line 255, in _call
+    result = func(*func_params)
+             ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\skiri\OneDrive\Escritorio\Material Estudio\Mini proyectos\Sistema Integral de Gestión\Models\Api.py", line 49, in GenerateReservation
+    if (response[0]):
+        ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2026-11-22 19:58:05,675 - ERROR - Error: Número no válido, debe tener 10 cifras y comenzar por 3
+2026-11-22 19:58:08,086 - ERROR - Error: Número no válido, debe tener 10 cifras y comenzar por 3
+2026-11-22 19:58:10,839 - ERROR - Error: Número no válido, debe tener 10 cifras y comenzar por 3
+2026-11-22 19:58:19,271 - INFO - Usuario registrado correctamente
+2026-11-22 19:58:33,679 - WARNING - Se Ha registrado su reserva de manera exitosa

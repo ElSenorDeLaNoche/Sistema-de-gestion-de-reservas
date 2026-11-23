@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS\Desing.Css">
+
+    <title>Sistema de Gestión Integral</title>
+</head>
+
+<body>
+    <div class="BodyApp">
+
+        <header class="Header">
+
+            <div class="Logo" onclick="View('Presentation')">
+                <img src="engranajes.png" alt="Image" style="height: 50px; width: 50px;margin-right: 5px;">
+                <h2>Sistema De Gestión Integral</h2>
+            </div>
+
+            <div class="Botones">
+                <button type="button">
+                    Revisar Reservas
+                </button>
+
+                <button type="button" onclick="View('SignUp')">
+                    Gestión Clientes
+                </button>
+            </div>
+
+        </header>
+
+        <div class="BodyComponent">
+
+            <nav class="Nav">
+
+                <h3>Servicios</h3>
+
+                <ul>
+                    <li>
+                        <a class="Rooms" onclick="View('GalleryServices', 'A1')">Alquiler de salas</a>
+                    </li>
+
+                    <li>
+                        <a class="Equipments" onclick="View('GalleryServices','A2')">Alquiler de equipos</a>
+                    </li>
+
+                    <li>
+                        <a class="Consulting" onclick="View('GalleryServices','A3')">Asesorías</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <section class="BodyContent">
+                <div class="Presentation">
+                        <img src="engranajes.png" alt="" style="height: 125px; width: 125px;">
+                        <h2 style="text-align: center;"> Bienvenidos al sistema de gestion Integral</h2>
+                </div>
+                <div class="SignUp">
+                    <div style="display: grid;width: 100%;height: 100%;place-items: center;">
+                        <div class="UsersOptions">
+                            <button type="button" class="active" id="RegisterOption" onclick="ViewForms('FormUsuario','RegisterOption')">
+                                Registrar usuario
+                            </button>
+
+                            <button type="button"  id="UpdateOption" onclick="ViewForms('FormUsuario_Update','UpdateOption')">
+                                Actualizar datos
+                            </button>
+                        </div>
+                        <form id="FormUsuario">
+
+                            <h2>Registro de usuario</h2>
+                            <p>Ingresa los datos del usuario.</p>
+
+                            <div class="InputGroup">
+                                <label for="Identification">Identificación</label>
+                                <input
+                                    type="number"
+                                    id="Identification"
+                                    name="Identification"
+                                    placeholder="Número de identificación"
+                                    required
+                                >
+                            </div>
+
+                            <div class="InputGroup">
+                                <label for="Name">Nombre completo</label>
+                                <input
+                                    type="text"
+                                    id="Name"
+                                    name="Name"
+                                    placeholder="Nombre del usuario"
+                                    required
+                                >
+                            </div>
+
+                            <div class="InputGroup">
+                                <label for="Email">Correo electrónico</label>
+                                <input
+                                    type="email"
+                                    id="Email"
+                                    name="Email"
+                                    placeholder="ejemplo@correo.com"
+                                    required
+                                >
+                            </div>
+
+                            <div class="InputGroup">
+                                <label for="Phone">Teléfono</label>
+                                <input
+                                    type="tel"
+                                    id="Phone"
+                                    name="Phone"
+                                    placeholder="Número de teléfono"
+                                    required
+                                >
+                            </div>
+
+                            <button type="submit">Registrar usuario</button>
+
+                        </form>
+                        <form id="FormUsuario_Update">
+
+                            <h2>Actualizacion de usuario</h2>
+                            <p>Buscar usuario</p>
+
+                            <div class="InputGroup">
+                                <label for="Identification">Identificación</label>
+                                <input
+                                    type="number"
+                                    id="IdentificationUpdate"
+                                    name="Identification"
+                                    placeholder="Número de identificación"
+                                    required
+                                >
+                            </div>
+                                <Button type="button" id="SeachUser">
+                                    Buscar usuario
+                                </Button>
+                            <div class="InputGroup">
+                                <label for="Name">Nombre completo</label>
+                                <input
+                                    type="text"
+                                    id="NameUpdate"
+                                    name="Name"
+                                    placeholder="Nombre del usuario"
+                                    required
+                                >
+                            </div>
+
+                            <div class="InputGroup">
+                                <label for="Email">Correo electrónico</label>
+                                <input
+                                    type="email"
+                                    id="EmailUpdate"
+                                    name="Email"
+                                    placeholder="ejemplo@correo.com"
+                                    required
+                                >
+                            </div>
+
+                            <div class="InputGroup">
+                                <label for="Phone">Teléfono</label>
+                                <input
+                                    type="tel"
+                                    id="PhoneUpdate"
+                                    name="Phone"
+                                    placeholder="Número de teléfono"
+                                    required
+                                >
+                            </div>
+
+                            <button type="submit">Actualizar datos</button>
+
+                        </form>
+                    </div>
+                </div>
+                        <div class="GalleryServices">
+                        </div>
+                        <div class="pop_up">
+                        </div>
+
+            </section>
+
+        </div>
+
+    </div>
+    <script src="JS\Backend.js"></script>
+</body>
+</html>
